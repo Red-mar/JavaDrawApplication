@@ -1,10 +1,10 @@
 package sample;
 
 public class Oval extends DrawingItem {
-    Point anchor;
-    double width;
-    double height;
-    double weight;
+    private Point anchor;
+    private double width;
+    private double height;
+    private double weight;
 
     public Oval(Point anchor, double width, double height, double weight){
         this.anchor = anchor;

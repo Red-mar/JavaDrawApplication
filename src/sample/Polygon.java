@@ -1,8 +1,8 @@
 package sample;
 
 public class Polygon extends DrawingItem{
-    Point[] vertices;
-    double weight;
+    private Point[] vertices;
+    private double weight;
 
     public Point[] getVertices() {
         return vertices;
@@ -14,5 +14,20 @@ public class Polygon extends DrawingItem{
 
     public void setWeight(double weight) {
         this.weight = weight;
+    }
+
+    @Override
+    double getHeight() {
+        return 0;
+    }
+
+    @Override
+    double getWidth() {
+        return 0;
+    }
+
+    @Override
+    Point getAnchor() {
+        return null;
     }
 }
